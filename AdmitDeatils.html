@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-2 Patients Admit Details</title>
+    <link rel="stylesheet" href="AdmitDeatils.css">
+</head>
+<body>
+    <div class="form-container">
+    <h2>Hospital Admit Form</h2>
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="+91-XXXXXXXXXX" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <!-- Admit Details -->
+        <label for="AdmitDate">Admit Date:</label>
+        <input type="date" id="AdmitDate" name="AdmitDate" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="General Medicine">General Medicine</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Pediatrics">Pediatrics</option>
+        </select>
+
+        <label for="doctor">Consulting Doctor:</label>
+        <input type="text" id="doctor" name="doctor" required>
+
+        <label for="reason">Reason for Admit:</label>
+        <textarea id="reason" name="reason" rows="3" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Admit Form</button>
+    </form>
+</div>
+
+</body>
+</html>
